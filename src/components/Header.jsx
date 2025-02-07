@@ -34,18 +34,18 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex justify-between items-center p-4 bg-white/60 dark:bg-gray-800/60 sticky z-50 top-0">
+    <header className="h-[8vh] flex justify-between items-center p-4 bg-white/60 dark:bg-gray-800/60 sticky z-50 top-0">
       <a href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
-        Yyauw.dev
+        Yyauw<span className="text-blue-500">.dev</span>
       </a>
-      <div>
+      <nav>
         <ul className="text-gray-800 dark:text-white items-center space-x-4 font-semibold hidden sm:flex">
           <li className="hover:cursor-pointer hover:text-blue-500">
             {" "}
-            <a href="/#">Inicio</a>
+            <a href="/#inicio">Inicio</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
-            <a href="/#">Proyectos</a>
+            <a href="/#proyectos">Proyectos</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
             <a href="/#">Habilidades</a>
@@ -104,7 +104,7 @@ export default function Header() {
             </ul>
           </div>
         )}
-      </div>
+      </nav>
     </header>
   );
 }

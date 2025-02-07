@@ -5,3 +5,7 @@
 @theme {
   --font-inter: "Kumar One", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
