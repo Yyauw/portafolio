@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="pt-[8vh] px-1">
       <h1 className="text-4xl tracking-wider text-center  font-bold dark:text-white">
-        Sobre <span className="text-blue-500">mi</span>
+        Sobre <span className="text-blue-500">mí</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 md:px-24 gap-4">
         <div className="p-4 rounded-2xl bg-blue-500 mx-auto -rotate-3 hover:cursor-pointer hover:scale-105 ease-in-out duration-300">
