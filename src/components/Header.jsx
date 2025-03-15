@@ -42,13 +42,13 @@ export default function Header() {
         <ul className="text-gray-800 dark:text-white items-center space-x-4 font-semibold hidden sm:flex">
           <li className="hover:cursor-pointer hover:text-blue-500">
             {" "}
-            <a href="/#inicio">Inicio</a>
+            <a href="#inicio">Inicio</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
-            <a href="/#proyectos">Proyectos</a>
+            <a href="#proyectos">Proyectos</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
-            <a href="/#habilidades">Habilidades</a>
+            <a href="#habilidades">Habilidades</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
             <a href="mailto:yauyunier@gmail.com">Contacto</a>
