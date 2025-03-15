@@ -22,8 +22,8 @@ export default function Header() {
     const theme = localStorage.getItem("theme");
     if (!theme) {
       console.log("No hay tema guardado");
-      const preferedTheme = window.matchMedia("(prefers-color-scheme: dark)"); // verifica si el usuario tiene el modo oscuro activado
-      const userTheme = preferedTheme.matches ? "dark" : "light";
+      // const preferedTheme = window.matchMedia("(prefers-color-scheme: dark)"); // verifica si el usuario tiene el modo oscuro activado
+      const userTheme = "dark"; //preferedTheme.matches ? "dark" : "light";
       localStorage.setItem("theme", userTheme);
       document.documentElement.setAttribute("data-theme", userTheme);
       setPageTheme(userTheme);
@@ -48,10 +48,10 @@ export default function Header() {
             <a href="/#proyectos">Proyectos</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
-            <a href="/#">Habilidades</a>
+            <a href="/#habilidades">Habilidades</a>
           </li>
           <li className="hover:cursor-pointer hover:text-blue-500">
-            <a href="/#">Contacto</a>
+            <a href="mailto:yauyunier@gmail.com">Contacto</a>
           </li>
           <li
             className="border border-transparent dark:hover:border-white hover:border-gray-800 p-1 hover:cursor-pointer  rounded-full"

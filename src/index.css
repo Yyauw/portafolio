@@ -9,3 +9,54 @@
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes appear-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes appear-scale {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.block-animation:nth-child(odd) {
+  animation: appear-from-right ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+.block-animation:nth-child(even) {
+  animation: appear-from-left ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 30%;
+}
+
+.block-scale-animation {
+  animation: appear-scale ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}

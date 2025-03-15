@@ -3,7 +3,7 @@ import heroimg from "../assets/images/heroimg.png";
 export default function Hero() {
   return (
     <section
-      className="flex flex-col-reverse md:grid  md:grid-cols-2 md:h-[92vh]"
+      className="pb-12 flex flex-col-reverse md:grid  md:grid-cols-2 md:h-[92vh]"
       id=" "
     >
       <div className="flex justify-center flex-col p-4">
@@ -25,7 +25,7 @@ export default function Hero() {
               Descargar CV
             </button>
             <button className="font-bold ms-4 border rounded-md px-4 py-2 text-blue-500  hover:cursor-pointer hover:scale-105 ease-in-out duration-100">
-              Contáctame
+              <a href="mailto:yauyunier@gmail.com">Contáctame</a>
             </button>
           </div>
           <div className="mt-5">
