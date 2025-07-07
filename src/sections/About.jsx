@@ -12,16 +12,15 @@ export default function About() {
         </div>
         <div className="mt-2 mx-auto text-center lg:text-left">
           <p className=" mt-4 text-lg dark:text-white md:max-w-xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
-            delectus laboriosam rerum quas dicta quidem earum. Consequuntur
-            laboriosam facilis Exercitationem corrupti, eveniet beatae fugit
-            perferendis quasi quia ex?
+            Soy Yunier Yau desarrollador de software apasionado por la
+            innovación y los desafíos tecnológicos. Con experiencia en
+            desarrollo web, móvil y automatización, me especializo en la
+            creación de soluciones eficientes y escalables.
           </p>
           <p className="mt-4 text-lg dark:text-white md:max-w-xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
-            delectus laboriosam rerum quas dicta quidem earum. Consequuntur
-            laboriosam facilis doloremque officiis! Exercitationem corrupti,
-            eveniet beatae fugit perferendis quasi quia ex?
+            Me encanta trabajar en equipo y siempre busco mejorar mis
+            habilidades para ofrecer productos de alta calidad. ¡Explora mis
+            proyectos y conoce más sobre mi trabajo!
           </p>
         </div>
       </div>
