@@ -35,7 +35,10 @@ export default function Header() {
 
   return (
     <header className="h-[8vh] flex justify-between items-center p-4 bg-white/60 dark:bg-gray-800/60 sticky z-50 top-0">
-      <a href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
+      <a
+        href="#inicio"
+        className="text-2xl font-bold text-gray-800 dark:text-white"
+      >
         Yyauw<span className="text-blue-500">.dev</span>
       </a>
       <nav>
@@ -65,8 +68,21 @@ export default function Header() {
           </li>
         </ul>
         {/* Responsive menu */}
-        <button onClick={handleOpenMenu} className="sm:hidden">
-          Menu
+        <button
+          onClick={handleOpenMenu}
+          className="sm:hidden text-black dark:text-white p-2"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
         {openMenu && (
           <div className="flex h-screen w-[50vw] top-0 bg-gray-50 dark:bg-gray-600 p-4 absolute left-0 z-50 sm:hidden">
@@ -78,7 +94,7 @@ export default function Header() {
               {" "}
               <li>
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
-                  Yyauw.dev
+                  Yyauw<span className="text-blue-500">.dev</span>
                 </h2>
               </li>
               <li
@@ -86,11 +102,28 @@ export default function Header() {
                 onClick={handleOpenMenu}
               >
                 {" "}
-                <a href="/#">Inicio</a>
+                <a href="#inicio" className="dark:text-white">
+                  Inicio
+                </a>
               </li>
-              <li onClick={handleOpenMenu}>Proyectos</li>
-              <li onClick={handleOpenMenu}>Habilidades</li>
-              <li onClick={handleOpenMenu}>Contacto</li>
+              <li onClick={handleOpenMenu}>
+                <a className="dark:text-white" href="#proyectos">
+                  Proyectos
+                </a>
+              </li>
+              <li onClick={handleOpenMenu}>
+                <a className="dark:text-white" href="#habilidades">
+                  Habilidades
+                </a>
+              </li>
+              <li onClick={handleOpenMenu}>
+                <a
+                  className="dark:text-white"
+                  href="mailto:yauyunier@gmail.com"
+                >
+                  Contacto
+                </a>
+              </li>
               <li
                 className="border border-transparent dark:hover:border-white hover:border-gray-800 p-1 hover:cursor-pointer  rounded-full"
                 onClick={changeTheme}

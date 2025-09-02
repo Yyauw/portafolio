@@ -7,7 +7,7 @@ export default function About() {
         Sobre <span className="text-blue-500">mí</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 md:px-24 gap-4">
-        <div className="p-4 rounded-2xl bg-blue-500 mx-auto -rotate-3 hover:cursor-pointer hover:scale-105 ease-in-out duration-300">
+        <div className="p-4 rounded-2xl bg-blue-500 mx-auto md:-rotate-3 hover:cursor-pointer hover:scale-105 ease-in-out duration-300">
           <img src={aboutimg} alt="" className="m-auto rounded-3xl w-md" />
         </div>
         <div className="mt-2 mx-auto text-center lg:text-left">

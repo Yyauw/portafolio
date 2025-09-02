@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       className="pb-12 flex flex-col-reverse md:grid  md:grid-cols-2 md:h-[92vh]"
-      id=" "
+      id="inicio"
     >
       <div className="flex justify-center flex-col p-4">
         <div>
@@ -24,7 +24,7 @@ export default function Hero() {
           <div className="mt-5">
             <a
               className="inline-block font-bold rounded-md px-4 py-2 bg-blue-500 dark:text-white hover:cursor-pointer hover:scale-105 ease-in-out duration-100"
-              href="portafolio/cv_yunieryau.pdf"
+              href={`${import.meta.env.BASE_URL}/cv_yunieryau.pdf`}
               target="_blank"
               download
             >
